@@ -1,7 +1,8 @@
 .vscode
 apidoc
 dist-api
- 
+envs
+
 # test output
 coverage
 test-report.xml
