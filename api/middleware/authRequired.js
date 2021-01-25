@@ -10,7 +10,7 @@ const makeProfileObj = (claims) => {
     email: claims.email,
     first_name: claims.name.split(' ')[0],
     last_name: claims.name.split(' ')[1],
-    role: 'pending',
+    role: 'guest',
   };
 };
 
@@ -24,7 +24,7 @@ const authRequired = async (req, res, next) => {
   try {
     const authHeader = req.headers.authorization || '';
     const match = authHeader.match(/Bearer (.+)/);
-
+    console.log(match);
     if (!match) throw new Error('Missing idToken');
 
     const idToken = match[1];
@@ -41,7 +41,7 @@ const authRequired = async (req, res, next) => {
         next();
       })
       .catch(() => {
-        res.status(401).json({ message: 'Invalid token' });
+        res.status(401).json({ message: 'Invalid token from auth middleware' });
       });
   } catch (err) {
     next(createError(401, err.message));

@@ -7,6 +7,7 @@ const restrictTo = require('../middleware/restrictTo');
 
 router.get('/me', authRequired, function (req, res) {
   const { user } = req;
+  console.log('user in userRouter', user);
   res.status(200).json({
     user,
   });
