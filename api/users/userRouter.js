@@ -1,11 +1,11 @@
 const express = require('express');
-const authRequired = require('../middleware/authRequired');
+// const authRequired = require('../middleware/authRequired');
 // const checkRole = require('./userMiddleware')
 const Users = require('./userModel');
 const router = express.Router();
 const restrictTo = require('../middleware/restrictTo');
 
-router.get('/me', authRequired, function (req, res) {
+router.get('/me', function (req, res) {
   const { user } = req;
   console.log('user in userRouter', user);
   res.status(200).json({
@@ -74,7 +74,6 @@ router.get('/me', authRequired, function (req, res) {
  */
 router.get(
   '/',
-  authRequired,
   restrictTo('executive_director', 'case_manager', 'supervisor'),
   function (req, res) {
     Users.findAll()
@@ -88,7 +87,7 @@ router.get(
   }
 );
 
-router.post('/', authRequired, function (req, res) {
+router.post('/', function (req, res) {
   Users.findOrCreateProfile(req.body)
     .then(() => {
       res.status(201).json({ message: 'Profile created' });
@@ -135,7 +134,6 @@ router.post('/', authRequired, function (req, res) {
  */
 router.get(
   '/:id',
-  authRequired,
   restrictTo('executive_director', 'case_manager', 'supervisor'),
   function (req, res) {
     const id = String(req.params.id);
@@ -153,7 +151,7 @@ router.get(
   }
 );
 
-router.get('/:id/family', authRequired, async (req, res) => {
+router.get('/:id/family', async (req, res) => {
   console.log('hit');
   try {
     const family = await Users.findFamilyByUserId(req.params.id);
@@ -245,7 +243,6 @@ router.get('/:id/family', authRequired, async (req, res) => {
  */
 router.put(
   '/:id',
-  authRequired,
   restrictTo('executive_director', 'case_manager', 'supervisor'),
   (req, res) => {
     const profile = req.body;

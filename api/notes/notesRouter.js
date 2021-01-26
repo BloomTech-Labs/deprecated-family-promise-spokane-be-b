@@ -1,10 +1,10 @@
 const express = require('express');
 const Notes = require('./notesModel');
-const authRequired = require('../middleware/authRequired');
+// const authRequired = require('../middleware/authRequired');
 const router = express.Router();
 const Families = require('../families/familiesModel');
 
-router.get('/', authRequired, function (req, res) {
+router.get('/', function (req, res) {
   const queries = { ...req.query };
 
   Notes.findAll(queries)
@@ -17,7 +17,7 @@ router.get('/', authRequired, function (req, res) {
     });
 });
 
-router.get('/:id', authRequired, function (req, res) {
+router.get('/:id', function (req, res) {
   const { id } = req.params;
   Notes.findById(id)
     .then((notes) => {
@@ -32,7 +32,7 @@ router.get('/:id', authRequired, function (req, res) {
     });
 });
 
-router.post('/', authRequired, async (req, res) => {
+router.post('/', async (req, res) => {
   const notes = req.body;
   const famId = notes['family_id'] || 0;
   if (notes) {
@@ -54,7 +54,7 @@ router.post('/', authRequired, async (req, res) => {
   }
 });
 
-router.put('/:id', authRequired, (req, res) => {
+router.put('/:id', (req, res) => {
   const newNote = req.body;
   const id = req.params.id;
   if (newNote) {
@@ -82,7 +82,7 @@ router.put('/:id', authRequired, (req, res) => {
   }
 });
 
-router.delete('/:id', authRequired, (req, res) => {
+router.delete('/:id', (req, res) => {
   const id = req.params.id;
   try {
     Notes.findByIdAndRemove(id).then(() => {
