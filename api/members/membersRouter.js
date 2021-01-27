@@ -1,13 +1,13 @@
 const express = require('express');
 // const checkRole = require('./membersMiddleware')
 const axios = require('axios');
-// const authRequired = require('../middleware/authRequired');
+const authRequired = require('../middleware/authRequired');
 const Members = require('./membersModel');
 const router = express.Router();
 const Families = require('../families/familiesModel');
 
 // checkRole.grantAccess('readAny', 'members'),
-router.get('/', function (req, res) {
+router.get('/', authRequired, function (req, res) {
   Members.findAll()
     .then((members) => {
       res.status(200).json(members);
@@ -19,7 +19,7 @@ router.get('/', function (req, res) {
 });
 
 // checkRole.grantAccess('readOwn', 'members'),
-router.get('/:id', function (req, res) {
+router.get('/:id', authRequired, function (req, res) {
   let getData = async (id) => {
     const test = await axios.post(
       'http://a-labs29-family-promise.eba-syir5yx3.us-east-1.elasticbeanstalk.com/predict',
@@ -47,7 +47,7 @@ router.get('/:id', function (req, res) {
 });
 
 // checkRole.grantAccess('createOwn', 'members'),
-router.post('/', async (req, res) => {
+router.post('/', authRequired, async (req, res) => {
   const memberData = req.body;
 
   const familyId = memberData['family_id'] || 0;
@@ -68,7 +68,7 @@ router.post('/', async (req, res) => {
 });
 
 // heckRole.grantAccess('updateOwn', 'members'),
-router.put('/:id', (req, res) => {
+router.put('/:id', authRequired, (req, res) => {
   const members = req.body;
   const id = req.params.id;
   if (members) {
@@ -97,7 +97,7 @@ router.put('/:id', (req, res) => {
 });
 
 // checkRole.grantAccess('deleteAny', 'members')
-router.delete('/:id', (req, res) => {
+router.delete('/:id', authRequired, (req, res) => {
   const id = req.params.id;
   try {
     Members.findById(id).then((members) => {
