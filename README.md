@@ -1,3 +1,31 @@
+
+# Family Promise of Spokane
+
+You can find the deployed project at [Family Promise of Spokane](https://family-profile-styling-emily.d3hmwb1bmjh3u1.amplifyapp.com//).
+
+# Description
+
+The Family Promise of Spokane  Organization is a US-based nonprofit organization based in Spokane, WA. They are an organization that helps homeless families as well as preventing families from becoming homeless. They provide shelter for families as well as rental assitance. For the full description visit their website [Family Promise of Spokane](https://www.familypromiseofspokane.org/)
+# Contributors
+
+| [Dominick Bruno](https://github.com/DomBruno) | [Robert Giuffre](https://github.com/rgiuffre90) | [Sara Cearc](https://github.com/cearc-sara) |
+| :---: | :---: | :---: | 
+| [<img src="https://ca.slack-edge.com/ESZCHB482-W012JHQU86N-44142d528214-512" width = "200" />](https://github.com/DomBruno) | [<img src="https://avatars.githubusercontent.com/u/69161174?s=460&u=24e9833995e636841ff7fed6a3c5535c96d4949b&v=4" width = "200" />](https://github.com/rgiuffre90) | [<img src="https://avatars.githubusercontent.com/u/67298892?s=460&u=2c4c90762496cd094b55c68e75230fb0d13217b5&v=4" width = "200" />](https://github.com/cearc-sara) | 
+| TPL | Data Scientist | Web Developer |  
+|[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/DomBruno) | [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/rgiuffre90) | [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/cearc-sara) | 
+| [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/dbruno93/) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/robert-giuffre/) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/sara-cearc/) |
+| [Lester Gomez](https://github.com/machine-17) | [Erle Granger II](https://github.com/ilEnzio) | [Mudesir Suleyman](https://github.com/mudesir) |
+| [<img src="https://avatars.githubusercontent.com/u/68140323?s=400&u=249894a3f4684124a2fe6b050fba8ab255af842b&v=4" width = "200" />](https://github.com/machine-17) | [<img src="https://ca.slack-edge.com/ESZCHB482-W015P64MU5B-108d53177582-512" width = "200" />](https://github.com/ilEnzio) | [<img src="https://ca.slack-edge.com/ESZCHB482-W012R4C0T44-d512b3c6174c-512" width = "200" />](https://github.com/mudesir) | 
+| Data Scientist | Data Engineer | Data Scientist |  
+|[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/machine-17) | [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/ilEnzio) | [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/mudesir) | [<img src="https://github.com/favicon.ico" width="15"> ]() |
+| [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/lg17/) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/erle-granger-a7b231/) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/mudesir-suleyman-a0b891190/) |           
+| [Suzanne Cabral](https://github.com/suzannecabral) | [Andrew Muto](https://github.com/amuto77) | [Brenson Whorley](https://github.com/BrensonW) |
+| [<img src="https://avatars.githubusercontent.com/u/25539417?s=400&u=e48fba22ff44e3b615a393ca394ed864ef41e141&v=4" width = "200" />](https://github.com/suzannecabral) | [<img src="https://ca.slack-edge.com/ESZCHB482-W012R4ECJ1J-bbb0dcc461ae-512" width = "200" />](https://github.com/amuto77) | [<img src="https://avatars.githubusercontent.com/u/68891543?s=460&u=015701fc2a17d1b7f71678df5c53d3688b8e2f89&v=4" width = "200" />](https://github.com/BrensonW) | 
+| Web Developer | Web Developer | Web Developer |  
+|[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/suzannecabral) | [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/amuto77) | [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/BrensonW) | 
+| [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ]() | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ]() | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ]() |
+
+
 # Basic Node API Scaffold
 
 Welcome to your `Basic Node API Repository`. Use this to start your own Greenfield Project using nodejs, express and common industry standards.
